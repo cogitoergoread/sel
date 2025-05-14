@@ -1,0 +1,19 @@
+[project]
+name = "sel"
+version = "0.1.0"
+description = "Selenium tutorial"
+authors = [
+    {name = "Varga Dio Jozsef", email = "31209755+cogitoergoread@users.noreply.github.com"},
+]
+dependencies = []
+requires-python = ">=3.13"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true

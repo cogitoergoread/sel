@@ -172,3 +172,14 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Emacs
+*~
+\#*\#
+
+# Direnv
+.direnv
+
+# Build version
+src/sel/resources/__version__.py
+
