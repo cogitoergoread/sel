@@ -5,7 +5,7 @@ description = "Selenium tutorial"
 authors = [
     {name = "Varga Dio Jozsef", email = "31209755+cogitoergoread@users.noreply.github.com"},
 ]
-dependencies = []
+dependencies = ["selenium>=4.32.0"]
 requires-python = ">=3.13"
 readme = "README.md"
 license = {text = "MIT"}
