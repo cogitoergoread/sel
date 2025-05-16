@@ -61,3 +61,28 @@ def test_login_functionality(chrome_browser):
         assert logout_button.is_displayed(), "Logout button is not displayed."
     except NoSuchElementException:
         pytest.fail("Logout button does not exist.")
+
+def test_pytest_selenium_plugin_example(selenium):
+    """
+    Test the title and description of the Pytest with Eric website using the pytest-selenium plugin
+    """
+    selenium.get("https://pytest-with-eric.com")
+
+    # Assert Web page title
+    selenium.implicitly_wait(10)
+    # Interestingly different than the previous test! "Pytest With Eric"
+    search_term ='Welcome to Pytest with Eric! | Pytest with Eric'
+    assert selenium.title ==  search_term
+
+    #
+    # Get Description
+    # Locate the meta tag by its name attribute
+    # meta_description = selenium.find_element(By.XPATH, "//meta[@name='description']")
+
+    # Retrieve the content attribute of the meta tag
+    # content_value = meta_description.get_attribute("content")
+
+    #  Assert the content attribute's value
+    # expected_content = "Learn to write production level Python Unit Tests with Pytest"
+    # print(content_value)
+    # assert content_value == expected_content
