@@ -1,10 +1,5 @@
-import pytest
-
 from tests.empages.login_page import LoginPage
 
-
-@pytest.fixture()
-def admin_login(chrome_browser):
 
 def test_login_functionality(chrome_browser):
     """

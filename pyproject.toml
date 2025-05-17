@@ -46,3 +46,14 @@ convention = "google"
 [tool.pdm]
 distribution = true
 
+[tool.pytest.ini_options]
+log_level = "DEBUG"
+addopts = '''
+--cov=sel
+ --color=yes
+ --cov-report=term
+ --log-cli-level=DEBUG
+'''
+pythonpath = [
+  "src/sel"
+]
